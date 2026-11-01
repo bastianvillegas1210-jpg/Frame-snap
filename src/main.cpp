@@ -51,7 +51,7 @@ class $modify(SnapGL, GJBaseGameLayer) {
         GJBaseGameLayer::handleButton(down, button, isPlayer1);
     }
 
-    void processCommands(float dt) {
+    void processCommands(float dt, bool isHalfTick, bool isLastTick) {
         int now = nowFrame();
         if (g_pending.active && now >= g_pending.fireAt) {
             g_pending.active = false;
@@ -62,7 +62,7 @@ class $modify(SnapGL, GJBaseGameLayer) {
             g_pending.releaseQueued = false;
             GJBaseGameLayer::handleButton(false, g_pending.button, g_pending.p1);
         }
-        GJBaseGameLayer::processCommands(dt);
+        GJBaseGameLayer::processCommands(dt, isHalfTick, isLastTick);
     }
 };
 

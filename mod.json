@@ -12,7 +12,11 @@
   "developer": "bastianvillegas1210",
   "description": "Si clickeas unos frames antes de un frame perfect, el click se ejecuta en el frame indicado.",
   "settings": {
-    "enabled": { "type": "bool", "name": "Activado", "default": true },
+    "enabled": {
+      "type": "bool",
+      "name": "Activado",
+      "default": true
+    },
     "window": {
       "type": "int",
       "name": "Ventana (frames)",

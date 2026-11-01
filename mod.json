@@ -1,6 +1,11 @@
 {
-  "geode": "4.0.0",
-  "gd": { "win": "2.2074", "android": "2.2074", "mac": "2.2074", "ios": "2.2074" },
+  "geode": "5.10.1",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081"
+  },
   "id": "bastianvillegas1210.framesnap",
   "name": "FrameSnap",
   "version": "v1.0.0",
@@ -9,12 +14,16 @@
   "settings": {
     "enabled": { "type": "bool", "name": "Activado", "default": true },
     "window": {
-      "type": "int", "name": "Ventana (frames)",
+      "type": "int",
+      "name": "Ventana (frames)",
       "description": "Cuántos frames antes del objetivo se acepta el click.",
-      "default": 3, "min": 1, "max": 10
+      "default": 3,
+      "min": 1,
+      "max": 10
     },
     "targets": {
-      "type": "string", "name": "Frames objetivo",
+      "type": "string",
+      "name": "Frames objetivo",
       "description": "Lista separada por comas, ej: 120,340,980",
       "default": ""
     }
